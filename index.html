@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Chem Lab</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<div class="mainCont">
+    <header class="header1">
+        <div class="headerLeft">
+            <img class="headerLogo" src="./imgs/image 18.png" alt="здесь должен быть логотип">
+            <h1 class="logoTitle">VR CHEMISTRY LAB</h1>
+        </div>
+        
+        <div class="headerRight">
+            <ul class="headerLinks">
+                <li class="navCont">
+                    <svg class="navIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2H20C21.1 2 22 2.9 22 4V16C22 17.1 21.1 18 20 18H6L2 22L2.01 4C2.01 2.9 2.9 2 4 2ZM7 11H9V9H7V11ZM13 11H11V9H13V11ZM15 11H17V9H15V11Z" fill="currentColor"/>
+                    </svg>
+                    <p class="navTitle">Пишем интересное в блоге </p>
+                </li>
+                <li class="navCont">
+                    <svg class="navIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V20H4V18Z" fill="currentColor"/>
+                    </svg>
+                    <p class="navTitle">Вход или регистрация</p>
+                </li>
+                <li class="navCont">
+                    <svg class="navIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 20H18.912L18.1095 17.8182H14.4532L13.6455 20H11.6227L15.3285 10.5455H17.2815L21 20ZM17.5702 16.3135L16.2915 12.7476L15.0075 16.3135H17.5702ZM10.6313 8.456C10.7257 8.10255 10.782 7.83636 10.8345 7.57455L9.18525 7.26327C9.15825 7.39782 9.10875 7.65091 9.02025 7.99055C8.46375 7.91127 7.87125 7.90182 7.27125 7.96073C7.2855 7.57018 7.31025 7.18764 7.34475 6.81964H9.18675V5.30473H7.566C7.6455 4.91855 7.7145 4.68727 7.782 4.46909L6.17175 4C6.05325 4.38255 5.95425 4.75782 5.85525 5.30473H4.017V6.81964H5.655C5.6115 7.30909 5.58525 7.81673 5.57775 8.33018C3.768 8.97455 3 10.2029 3 11.3171C3 12.6327 4.07025 13.7891 5.763 13.64C7.8645 13.4545 9.26775 11.9156 10.0905 10.0225C10.941 10.4982 11.2965 11.2975 10.9763 12.0378C10.6793 12.7222 9.8055 13.3745 8.1375 13.3411V14.9716C9.98925 14.9993 11.811 14.3178 12.525 12.6691C13.2225 11.0589 12.426 9.29818 10.6313 8.456ZM8.46225 9.56945C8.2005 10.1324 7.8555 10.6916 7.416 11.1324C7.3485 10.6633 7.30275 10.1491 7.278 9.6C7.67775 9.54909 8.082 9.53964 8.46225 9.56945ZM5.62125 10.096C5.66775 10.7847 5.748 11.4182 5.859 11.984C4.362 12.2495 4.302 10.8182 5.62125 10.096Z" fill="currentColor"/>
+                    </svg>
+                    <p class="navTitle">English </p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <header class="headerMobile">
+        <div class="headerLeft">
+            <img class="headerLogo" src="./imgs/smallLogo.png" alt="здесь должен быть логотип">
+            <h1 class="logoTitle">VCL</h1>
+        </div>
+        
+        <div class="headerRight">
+            <ul class="headerLinks">
+                <li class="navCont">
+                    <p class="navTitle">Блог</p>
+                </li>
+                <li class="navCont">
+                    <svg class="navIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V20H4V18Z" fill="currentColor"/>
+                    </svg>
+                    <p class="navTitle">Вход</p>
+                </li>
+                <li class="navCont">
+                    <svg class="navIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 20H18.912L18.1095 17.8182H14.4532L13.6455 20H11.6227L15.3285 10.5455H17.2815L21 20ZM17.5702 16.3135L16.2915 12.7476L15.0075 16.3135H17.5702ZM10.6313 8.456C10.7257 8.10255 10.782 7.83636 10.8345 7.57455L9.18525 7.26327C9.15825 7.39782 9.10875 7.65091 9.02025 7.99055C8.46375 7.91127 7.87125 7.90182 7.27125 7.96073C7.2855 7.57018 7.31025 7.18764 7.34475 6.81964H9.18675V5.30473H7.566C7.6455 4.91855 7.7145 4.68727 7.782 4.46909L6.17175 4C6.05325 4.38255 5.95425 4.75782 5.85525 5.30473H4.017V6.81964H5.655C5.6115 7.30909 5.58525 7.81673 5.57775 8.33018C3.768 8.97455 3 10.2029 3 11.3171C3 12.6327 4.07025 13.7891 5.763 13.64C7.8645 13.4545 9.26775 11.9156 10.0905 10.0225C10.941 10.4982 11.2965 11.2975 10.9763 12.0378C10.6793 12.7222 9.8055 13.3745 8.1375 13.3411V14.9716C9.98925 14.9993 11.811 14.3178 12.525 12.6691C13.2225 11.0589 12.426 9.29818 10.6313 8.456ZM8.46225 9.56945C8.2005 10.1324 7.8555 10.6916 7.416 11.1324C7.3485 10.6633 7.30275 10.1491 7.278 9.6C7.67775 9.54909 8.082 9.53964 8.46225 9.56945ZM5.62125 10.096C5.66775 10.7847 5.748 11.4182 5.859 11.984C4.362 12.2495 4.302 10.8182 5.62125 10.096Z" fill="currentColor"/>
+                    </svg>
+                    <p class="navTitle">Eng</p>
+                </li>
+            </ul>
+    </header>
+    <div class="firstPage">
+        <div class="firstTopCutter">
+            <h1 class="firstTitle">VR Chemistry Lab</h1>
+            <p class="firstSubtitle">
+                Безопасная химическая лаборатория<br>
+                в виртуальной реальности
+            </p>
+            <button class="firstBtn">Узнать подробнее</button>
+        </div>
+        <div class="firstVisual">
+            <img src="./imgs/Group 4.png" class="firstVisualImage1 object" data-value="-2" alt="">
+            <img src="./imgs/Ellipse 1.png" class="firstVisualImage2 object" data-value="6" alt="">
+            <img src="./imgs/image 3.png" class="firstVisualImage3 object" data-value="4" alt="">
+            <img src="./imgs/Group 6.png" class="firstVisualImage4 object" data-value="-6" alt="">
+            <img src="./imgs/Group 48.png" class="firstVisualImage5 object" data-value="-4" alt="">
+            <img src="./imgs/image-removebg (3) 2.png" class="firstVisualImage6 object" data-value="-4" alt="">
+            <img src="./imgs/image-removebg (3) 1.png" class="firstVisualImage7 object" data-value="5" alt="">
+            <img src="./imgs/311426_1 1.png" class="firstVisualImage8 " data-value="-9" alt="">
+            <img src="./imgs/Group 7.png" class="firstVisualImage9 object" data-value="-5" alt="">
+            <h1 class="visualTitle">Всегда есть место эксперементу</h1>
+        </div>
+        <div class="firstVisualMobile">
+            <img src="./imgs/MobileImg1.png" alt="" class="firstVisualImgMob1">
+            <img src="./imgs/MobileImg2.png" alt="" class="firstVisualImgMob2">
+            <img src="./imgs/MobileImg3.png" alt="" class="firstVisualImgMob3">
+            <img src="./imgs/MobileImg4.png" alt="" class="firstVisualImgMob4">
+            <img src="./imgs/MobileImg5.png" alt="" class="firstVisualImgMob5">
+            <img src="./imgs/MobileImg6.png" alt="" class="firstVisualImgMob6">
+            <img src="./imgs/MobileImg7.png" alt="" class="firstVisualImgMob7">
+            <img src="./imgs/MobileImg8.png" alt="" class="firstVisualImgMob8">
+            <h1 class="visualTitleMob">Всегда есть место эксперементу</h1>
+        </div>
+    </div>
+    <div class="secondPage" data-aos="fade-up">
+        <h1 class="secondAbout">
+            VR Chemistry Lab позволяет<br>
+            выполнять эксперименты, которые нет возможности<br>
+            дать учащимся из соображений безопасности,<br>
+            материальных ограничений или необходимости<br>
+            проводить занятия дистанционно<br>
+        </h1>
+        <div class="videoCont">
+            <div class="videoPlug">
+                <img src="./imgs/Rectangle 3.png" alt="" class="videoBG">
+                <img src="./imgs/Rectangle 3Mob.png" alt="" class="videoBGMob">
+                <div class="videoCloud">
+                    <p class="cloudText">
+                        Свобода действий и достоверность<br>
+                        результатов  реакций обеспечивается<br>
+                        специально разработанной<br>
+                        химико-физической моделью
+
+                    </p>
+                </div>
+                <div class="playBtn">
+                    <h1 class="btnText">
+                        Посмотрите видео<br>
+                        о работе в лаборатории
+                    </h1>
+                    <svg class="btnIcon" width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 16L5.52296e-07 31.5L1.90735e-06 0.499999L27 16Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <!-- <img src="./imgs/Frame 1.png" alt="" class="playBtn"> -->
+            </div>
+            <iframe width="1082" height="609" 
+                src="https://www.youtube.com/embed/Ij_rOoU1ZK8" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div class="thirdPage" data-aos="fade-left">
+        <div class="thirdVisual">
+            <img src="./imgs/ni.png" class="thirdVisualImage1 object" data-value="4" alt="">
+            <img src="./imgs/mg.png" class="thirdVisualImage2 object" data-value="-6" alt="">
+            <img src="./imgs/niMob.png" class="thirdVisualImageMob1" alt="">
+            <img src="./imgs/mgMob.png" class="thirdVisualImageMob2" alt="">
+        </div>
+        <div class="thirdAdvantages">
+            <div class="advantagesFlex">
+                <div class="advantagesLeft">
+                    <img src="./imgs/Rectangle 5.png" alt="" class="advantagesIcon">
+                    <img src="./imgs/Rectangle 5Mob.png" alt="" class="advantagesIconMob">
+                    <h1 class="advantagesTitle">
+                        Учителям химии
+                    </h1>
+                    <p class="advatagesSubtitle">
+                        Доступ к отсутствующему<br>
+                        или дорогому оборудованию
+                    </p>
+                    <p class="advatagesSubtitle">
+                        Проведение опасных, количественных<br>
+                        и проблемных лабораторных работ
+                    </p>
+                    <p class="advatagesSubtitle">
+                        Дистанционная подготовка<br>
+                        к реальному практикуму
+                    </p>
+                    <p class="advatagesSubtitle">
+                        Достоверность полученных результатов<br>
+                        и возможность их фиксации
+                    </p>
+                </div>
+                <div class="advantagesRight">
+                    <img src="./imgs/Rectangle 6.png" alt="" class="advantagesIcon">
+                    <img src="./imgs/Rectangle 6Mob.png" alt="" class="advantagesIconMob">
+                    <h1 class="advantagesTitle">
+                        Ученикам
+                    </h1>
+                    <p class="advatagesSubtitle">
+                        Повышение осознанности при работе<br>
+                        в реальной лаборатории
+                    </p>
+                    <p class="advatagesSubtitle">
+                        Доступ к экспериментам для детей<br>
+                        с ОВЗ и аллергиями
+                    </p>
+                    <p class="advatagesSubtitle">
+                        Возможность безопасно ошибаться,<br>
+                        анализировать свои ошибки и учиться на них
+                    </p>
+                    <p class="advatagesSubtitle">
+                        Самостоятельное принятия решений при<br>
+                        планировании и проведении эксперимента
+                    </p>
+                </div>
+                
+            </div>
+            <button class="advantagesBtn">
+                Попробовать и купить
+            </button>
+                  
+        </div>
+    </div>
+    <div class="forthPage" data-aos="fade-up">
+        <div class="browserIcons">
+            <img src="./imgs/image 8.png" alt="" class="browserIcon">
+            <img src="./imgs/image 9.png" alt="" class="browserIcon">
+            <img src="./imgs/image 10.png" alt="" class="browserIcon">
+        </div>
+        <h1 class="forthTitle">Можно и без VR-сета</h1>
+        <p class="forthSubtitle">
+            Потестировать платформу или проводить<br>
+            эксперименты можно онлайн в браузере</p>
+        <button class="forthBtn">Попробовать</button>
+        <img src="./imgs/Macbook Pro.png" alt="" class="macBooba">
+        <img src="./imgs/Macbook ProMob.png" alt="" class="macBoobaMob">
+
+    </div>
+    <div class="sixthPage" data-aos="fade-right">
+        <div class="sixthVisual">
+            <img src="./imgs/Group 6.png" class="sixthVisualImage1 object" data-value="4" alt="">
+            <img src="./imgs/Group 7.png" class="sixthVisualImage2 object" data-value="-6" alt="">
+            <img src="./imgs/Group 6Mob.png" class="sixthVisualImageMob1" alt="">
+            <img src="./imgs/Group 7Mob.png" class="sixthVisualImageMob2" alt="">
+            
+        </div>
+        <div class="teamCont">
+            <div class="teamWrapper">
+                <h1 class="teamTitle">Наша команда</h1>
+                <div class="personsCont">
+                    <div class="singlePerson">
+                        <img src="./imgs/person1.png" alt="" class="personIcon">
+                        <h1 class="personName">Виктор Демин</h1>
+                        <p class="personJob">
+                            Разработчик<br>
+                            образовательных<br>
+                            программ
+                        </p>
+                    </div>
+                    <div class="singlePerson">
+                        <img src="./imgs/person2.png" alt="" class="personIcon">
+                        <h1 class="personName">Елена Батаева</h1>
+                        <p class="personJob">
+                            Главный методист<br>
+                            по химии
+                        </p>
+                    </div>
+                    <div class="singlePerson">
+                        <img src="./imgs/person3.png" alt="" class="personIcon">
+                        <h1 class="personName">Станислав Дацюк</h1>
+                        <p class="personJob">
+                            VR-разработчик
+                        </p>
+                    </div>
+                    <div class="singlePerson">
+                        <img src="./imgs/person4.png" alt="" class="personIcon">
+                        <h1 class="personName">Ярослав Фадеев</h1>
+                        <p class="personJob">
+                            Разработчик<br>
+                            физико-химической<br>
+                            модели
+                        </p>
+                    </div>
+                    <div class="singlePerson">
+                        <img src="./imgs/person5.png" alt="" class="personIcon">
+                        <h1 class="personName">Иван Иванов</h1>
+                        <p class="personJob">
+                            Главный разработчик<br>
+                            проекта
+                        </p>
+                    </div>
+                    <div class="singlePerson">
+                        <img src="./imgs/person6.png" alt="" class="personIcon">
+                        <h1 class="personName">Иван Иванов</h1>
+                        <p class="personJob">
+                            Главный разработчик<br>
+                            проекта
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+                
+                  
+        </div>
+    </div>
+    <div class="seventhPage" data-aos="fade-up">
+        <div class="seventhWrapper">
+            <h1 class="tryAndBuyTitle">Попробовать и купить</h1>
+            <p class="tryAndBuySubtitle">
+                В пакет входят актуальные задания, все обновления<br>
+                и новые задачи вы получаете бесплатно.<br>
+                Разработаем задания индивидуально для вас
+            </p>
+            <div class="tryAndBuyFlex">
+                <div class="tryAndBuyLeft">
+                    <img src="./imgs/Group 62.png" alt="" class="buyIcon">
+                    <img src="./imgs/Group 62Mob.png" alt="" class="buyIconMob">
+                    <h1 class="buyTitle">VR версия</h1>
+                    <p class="buySubtitle">
+                        Для работы на ПК и интерактивных<br>
+                        досках. Есть возможности<br>
+                        интеграции с вашей системой<br>
+                        электронных курсов и LMS
+                    </p>
+                    <h2 class="buyPrice">
+                        25 000 ₽
+                    </h2>
+                    <ul class="buyList">
+                        <li class="listItem">Первая строчка  длинная</li>
+                        <li class="listItem">Описание какое-то здесь</li>
+                    </ul>
+                    <button class="buyBtn">Купить VR-версию</button>
+                    <p class="buySpecs">
+                        Технические требования<br>
+                        к VR версии →
+                    </p>
+
+                </div>
+                <div class="tryAndBuyRight">
+                    <img src="./imgs/Group 43.png" alt="" class="buyIcon">
+                    <img src="./imgs/Group 43Mob.png" alt="" class="buyIconMob">
+                    <h1 class="buyTitle">Веб версия</h1>
+                    <p class="buySubtitle">
+                        Для работы на ПК и интерактивных<br>
+                        досках. Есть возможности<br>
+                        интеграции с вашей системой<br>
+                        электронных курсов и LMS
+                    </p>
+                    <h2 class="buyPrice">
+                        от 300 ₽ до 1000 ₽
+                    </h2>
+                    <ul class="buyList">
+                        <li class="listItem">Первая строчка  длинная</li>
+                        <li class="listItem">Описание какое-то здесь</li>
+                    </ul>
+                    <button class="buyBtn">Купить веб версию</button>
+                    <p class="buySpecs">
+                        Технические требования<br>
+                        к веб версии →
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="eighthPage" data-aos="fade-up">
+        <img src="./imgs/flask-liquid.png"  alt="" class="eighthVisual">
+        <div class="contactCont">
+            <div class="contactFlex">
+                <div class="contactLeft">
+                    <h1 class="contactTitle">
+                        Контакты
+                    </h1>
+                    <p class="contactSubtitle">
+                        Приходите в офис,<br>
+                        покажем как все<br>
+                        работает 
+                    </p>
+                </div>
+                <div class="contactRight">
+                    <div class="addresLine">
+                        <h1 class="lineTitle">Адрес продаж</h1>
+                        <p class="lineSubtitle">Москва, Пушкина 25</p>
+                    </div>
+                    <div class="addresLine">
+                        <h1 class="lineTitle">Адрес поддержки</h1>
+                        <p class="lineSubtitle">Москва, Ивановская 32</p>
+                    </div>
+                    <div class="addresLine">
+                        <h1 class="lineTitle">Контактный телефон</h1>
+                        <p class="lineSubtitle">+7 926 388-17-57</p>
+                    </div>
+                    <div class="lawCont">
+                        <h1 class="lawLine">
+                            ИНН<span class="lawNumber">3664069397</span>
+                        </h1>
+                        <h1 class="lawLine">
+                            ОГРН<span class="lawNumber">1053600591197</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="supportPage">
+        <div class="supportFlex">
+            <p class="supportText">
+                Если у Вас есть вопрос по работе<br>
+                нашего ПО, то заполните <span class="supportTextBlue">форму</span><br>
+                или напишите нам по адресу<br>
+                <span class="supportTextBlue">support@stemgames.ru</span>
+            </p>
+            <img src="./imgs/image-removebg (2) 1.png" alt="" class="supportImg">
+        </div>
+        
+    </div>
+    <footer class="footerPage">
+        <div class="footerFlex">
+            <div class="footerLeft">
+                <div class="smallBrandMark">
+                    <img src="./svg/Group 11.svg" alt="" class="smallIcon">
+                    <img src="./svg/Group 11Mob.svg" alt="" class="smallIconMob">
+                    <h1 class="smallName">VR CHEMISTRY LAB</h1>
+                </div>
+                <h2 class="footerAgreement">Пользовательское соглашение</h2>
+                <p class="footerAddresLine">Москва, Пушкина 25</p>
+                <p class="footerAddresLine">+7 926 388-17-57</p>
+                <div class="footerLang">
+                    <svg class="langIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 20H18.912L18.1095 17.8182H14.4532L13.6455 20H11.6227L15.3285 10.5455H17.2815L21 20ZM17.5702 16.3135L16.2915 12.7476L15.0075 16.3135H17.5702ZM10.6313 8.456C10.7257 8.10255 10.782 7.83636 10.8345 7.57455L9.18525 7.26327C9.15825 7.39782 9.10875 7.65091 9.02025 7.99055C8.46375 7.91127 7.87125 7.90182 7.27125 7.96073C7.2855 7.57018 7.31025 7.18764 7.34475 6.81964H9.18675V5.30473H7.566C7.6455 4.91855 7.7145 4.68727 7.782 4.46909L6.17175 4C6.05325 4.38255 5.95425 4.75782 5.85525 5.30473H4.017V6.81964H5.655C5.6115 7.30909 5.58525 7.81673 5.57775 8.33018C3.768 8.97455 3 10.2029 3 11.3171C3 12.6327 4.07025 13.7891 5.763 13.64C7.8645 13.4545 9.26775 11.9156 10.0905 10.0225C10.941 10.4982 11.2965 11.2975 10.9763 12.0378C10.6793 12.7222 9.8055 13.3745 8.1375 13.3411V14.9716C9.98925 14.9993 11.811 14.3178 12.525 12.6691C13.2225 11.0589 12.426 9.29818 10.6313 8.456ZM8.46225 9.56945C8.2005 10.1324 7.8555 10.6916 7.416 11.1324C7.3485 10.6633 7.30275 10.1491 7.278 9.6C7.67775 9.54909 8.082 9.53964 8.46225 9.56945ZM5.62125 10.096C5.66775 10.7847 5.748 11.4182 5.859 11.984C4.362 12.2495 4.302 10.8182 5.62125 10.096Z" fill="currentColor"/>
+                    </svg>
+                    <p class="langValue">English </p>
+                </div>
+            </div>
+            <div class="footerRight">
+                <div class="socialsFlex">
+                    <img src="./imgs/Frame 2.png" alt="" class="socialImage">
+                    <img src="./imgs/Frame 7.png" alt="" class="socialImage">
+                    <img src="./imgs/Frame 5.png" alt="" class="socialImage">
+                    <img src="./imgs/Frame 9.png" alt="" class="socialImage">
+                </div>
+                <div class="footerLang">
+                    <svg class="langIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 20H18.912L18.1095 17.8182H14.4532L13.6455 20H11.6227L15.3285 10.5455H17.2815L21 20ZM17.5702 16.3135L16.2915 12.7476L15.0075 16.3135H17.5702ZM10.6313 8.456C10.7257 8.10255 10.782 7.83636 10.8345 7.57455L9.18525 7.26327C9.15825 7.39782 9.10875 7.65091 9.02025 7.99055C8.46375 7.91127 7.87125 7.90182 7.27125 7.96073C7.2855 7.57018 7.31025 7.18764 7.34475 6.81964H9.18675V5.30473H7.566C7.6455 4.91855 7.7145 4.68727 7.782 4.46909L6.17175 4C6.05325 4.38255 5.95425 4.75782 5.85525 5.30473H4.017V6.81964H5.655C5.6115 7.30909 5.58525 7.81673 5.57775 8.33018C3.768 8.97455 3 10.2029 3 11.3171C3 12.6327 4.07025 13.7891 5.763 13.64C7.8645 13.4545 9.26775 11.9156 10.0905 10.0225C10.941 10.4982 11.2965 11.2975 10.9763 12.0378C10.6793 12.7222 9.8055 13.3745 8.1375 13.3411V14.9716C9.98925 14.9993 11.811 14.3178 12.525 12.6691C13.2225 11.0589 12.426 9.29818 10.6313 8.456ZM8.46225 9.56945C8.2005 10.1324 7.8555 10.6916 7.416 11.1324C7.3485 10.6633 7.30275 10.1491 7.278 9.6C7.67775 9.54909 8.082 9.53964 8.46225 9.56945ZM5.62125 10.096C5.66775 10.7847 5.748 11.4182 5.859 11.984C4.362 12.2495 4.302 10.8182 5.62125 10.096Z" fill="currentColor"/>
+                    </svg>
+                    <p class="langValue">English </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- <div class="modalWindow">
+        <svg class="xBtn" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.0001 14.8128L29.1872 12.9999L22 20.1871L14.8129 12.9999L13 14.8128L20.1872 22L13 29.1872L14.8129 31L22 23.8128L29.1872 31L31.0001 29.1872L23.8129 22L31.0001 14.8128Z" fill="currentColor"/>
+        </svg>
+        <div class="modalWrapper">
+            <h1 class="modalTitle">
+                Купить VR версию
+            </h1>
+            <div class="radioCont">
+                <input class="radioNo" id="radio1" name="radioModal" type="radio" checked>
+                <label class="radioLabel " for="radio1">Физ. лицо</label>
+                <input class="radioNo" id="radio2" name="radioModal" type="radio">
+                <label class=" radioLabel radioLabelOff" for="radio2">Юр. лицо</label>
+            </div>
+            <div class="inputCont">
+                <h1 class="inputTitle">ФИО контактного лица*</h1>
+                <input class="modalInput" placeholder="Константинов Константин Константинольский" type="text">
+                <span class="errorReserve"></span>
+            </div>
+            <div class="inputCont">
+                <h1 class="inputTitle">Название организации*</h1>
+                <input class="modalInput" placeholder="ООО «МОЯ ОБОРОНА»" type="text">
+                <span class="errorReserve"></span>
+            </div>
+            <div class="inputCont">
+                <h1 class="inputTitle">Почта, телефон, мессенджер*</h1>
+                <input class="modalInput" placeholder="Можно в телеграм @sampleid" type="text">
+                <span class="errorReserve"></span>
+            </div>
+            <div class="inputCont">
+                <h1 class="inputTitle">Дополнительный способ связи</h1>
+                <input class="modalInput" placeholder="+7 999 999 99-99" type="text">
+                <span class="errorReserve"></span>
+            </div>
+            <p class="integration">
+                Нужна ли интеграция с LMS/системой электронных<br>
+                курсов. Если да, какая система используется и как<br>
+                происходит авторизация
+            </p>
+            <textarea class="modalTextarea" name="modalArea" id="" cols="30" rows="6" placeholder=
+            "Не знаю что тут должно быть&#10;Ещё одна строчка для понятности"></textarea>
+            <div class="checkboxCont">
+                <div class="singleCheckbox">
+                    <input class="inputCheck" name="checkbox1" type="checkbox">
+                    <label class="customCheck" for="checkbox1">
+                    <div class="checkIcon">
+                            <div class="innerCheck">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.00003 16.17L4.83003 12L3.41003 13.41L9.00003 19L21 7.00003L19.59 5.59003L9.00003 16.17Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h1 class="checkTitle">Нужна ли разработка заданий</h1>    
+                        
+                    </label>
+                </div>
+                <div class="singleCheckbox">
+                    <input class="inputCheck" name="checkbox2" type="checkbox">
+                    <label class="customCheck" for="checkbox2">
+                        <div class="checkIcon">
+                            <div class="innerCheck">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.00003 16.17L4.83003 12L3.41003 13.41L9.00003 19L21 7.00003L19.59 5.59003L9.00003 16.17Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h1 class="checkTitle">Нужна ли выгрузка статистики</h1>  
+                    </label>
+                </div>
+            </div>
+            <button class="modalBtn">Отправить заявку на покупку</button>
+            <p class="userAgreement">
+                Нажимая кнопку «Отправить заявку на покупку»<br>
+                я соглашаюсь с условиями<span class="blueText">пользовательского<br>
+                    соглашения</span>
+            </p>
+        </div> -->
+        
+        
+    </div>
+    <!-- <div class="arrowBtns">
+        <button class="arrowBtn">
+            <svg class="arrowIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" fill="currentColor"/>
+            </svg>     
+        </button>
+        <button class="arrowBtn">
+            <svg class="arrowIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 11H16.17L10.58 5.41L12 4L20 12L12 20L10.59 18.59L16.17 13H4V11Z" fill="currentColor"/>
+            </svg>
+        </button>
+    </div> -->
+</div>
+
+
+<script type="text/javascript">
+    // document.addEventListener("mousemove", parallax);
+    function parallax(e){
+      document.querySelectorAll(".object").forEach(function(move){
+
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 400;
+        var y = (e.clientY * moving_value) / 400;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+      });
+    }
+    </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
